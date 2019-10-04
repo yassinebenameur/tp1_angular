@@ -5,15 +5,15 @@
         <img src="assets/images/rotating_card_thumb3.png"/>
       </div>
       <div class="user">
-        <img class="img-circle" src="assets/images/rotating_card_profile.png"/>
+        <img class="img-circle" src="assets/images/{{person.path}}"/>
       </div>
       <div class="content">
         <div class="main">
-          <h3 class="name">Inna Corman</h3>
-          <p class="profession">Product Manager</p>
+          <h3 class="name">{{person.firstName}} {{person.lastName}}</h3>
+          <p class="profession">{{person.job}}</p>
 
-          <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love
-            me everywhere"</p>
+          <p class="text-center">Age: {{person.age}}</p>
+          <p class="text-center">CIN: {{person.cin}}</p>
         </div>
         <div class="footer">
           <div class="rating">

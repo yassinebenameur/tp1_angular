@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Person} from '../_models/personne';
 
 @Component({
   selector: 'app-cv',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvComponent implements OnInit {
 
-  constructor() { }
+
+  selectedPerson: Person;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
