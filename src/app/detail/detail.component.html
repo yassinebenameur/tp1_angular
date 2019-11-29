@@ -51,14 +51,13 @@
               </p>
             </div>
           </div>
-
         </div>
       </div>
+
       <div class="footer">
         <div class="social-links text-center">
-          <a class="facebook" href="https://creative-tim.com"><i class="fa fa-facebook fa-fw"></i></a>
-          <a class="google" href="https://creative-tim.com"><i class="fa fa-google-plus fa-fw"></i></a>
-          <a class="twitter" href="https://creative-tim.com"><i class="fa fa-twitter fa-fw"></i></a>
+          <button class="btn btn-primary" (click)="embaucher()">Embaucher</button>
+          <button class="btn btn-warning" [routerLink]="'/cv/detail/'+person.id">Détails</button>
         </div>
       </div>
     </div> <!-- end back panel -->
